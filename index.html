@@ -8,32 +8,48 @@
     <title>Modal window</title>
   </head>
   <body>
-    <button class="show-modal">Show modal 1</button>
-    <div class="modal hidden">
-      <button class="close-modal">&times</button>
-      <!-- <button class="test-btn">&times</button> -->
+  <!-- Start Sign up -->
+    <button class="show-modal" id="show-modal-id">Show modal 1</button>
+    <div class="modal hidden" id="test">
+      <button class="close-modal" id="close-modal-id">&times</button>
+
       <div class="modale-container">
           <div class="img"></div>
           <h1>Sign up</h1>
           <hr>
           <p>Discover a new way of traveling with HomeExchange: Be welcomed all over the world and save money!</p>
-          <!-- <a href="#For-Sign-in" class="btn btn-1 show-modal-SignUp"><p>Sign up with your email address</p></a> -->
-          <a href="#For-Sign-in" class="btn btn-1"><p>Sign up with your email address</p></a>
+          <a href="#" id="open-modal-id-SignUp" class="btn btn-1"><p>Sign up with your email address</p></a>
           <a href="#" class="btn btn-2"><p>Sign up with your email address</p></a>
           <a href="#" class="btn btn-3"><p>Sign up with your email address</p></a>
-          <p class="para-for-sign-in">Already have an account?<a href="#"><span>Sign in</span></a></p>
+          <p class="para-for-sign-in">Already have an account?<a href="#">Sign in</a></p>
           <hr>
-          <p class="para-for-General-Terms">By creating an account, I accept the <a href="#"><span>General Terms of Use</span></a></p>
+          <p class="para-for-General-Terms">By creating an account, I accept the <a href="#">General Terms of Use</a></p>
       </div>
     </div>
     <div class="overlay hidden"></div>
+    <!-- Start Sign up -->
+
     <!-- Start Sign in -->
-
-    <!-- <div id="For-Sign-in"> -->
-
+    <div class="modal hidden" id="test1">
+      <button class="close-modal" id="close-modal-id-SignUp">&times</button>
+      <button class="returnToSignUp" id="return-SignUp-id">&lt;</button>
+      <div class="modale-container">
+          <div class="img"></div>
+          <h1>Sign In</h1>
+          <hr>
+          <p>Discover a new way of traveling with HomeExchange: Be welcomed all over the world and save money!</p>
+          <a href="#" class="btn btn-1"><p>Sign up with your email address</p></a>
+          <a href="#" class="btn btn-2"><p>Sign up with your email address</p></a>
+          <p class="para-for-sign-in">Already have an account?<a href="#">Sign in</a></p>
+          <hr>
+          <p class="para-for-General-Terms">By creating an account, I accept the <a href="#">General Terms of Use</a></p>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
     <!-- End Sign in -->
    
 
     <script src="script.js"></script>
   </body>
 </html>
+
