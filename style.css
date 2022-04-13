@@ -38,7 +38,6 @@ body {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
-  font-size: 5rem;
   color: rgb(174, 170, 170);
   cursor: pointer;
   border: none;
@@ -59,7 +58,7 @@ p {
 }
 
 /* -------------------------- */
-/* CLASSES TO MAKE MODAL WORK */
+/* START CLASSES TO MAKE MODAL WORK */
 .hidden {
   display: none;
 }
@@ -92,6 +91,10 @@ p {
   backdrop-filter: blur(0.2px);
   z-index: 5;
 }
+
+/* END CLASSES TO MAKE MODAL WORK */
+/* -------------------------- */
+
 @media screen and (max-width: 600px){
   .modal {
     width: 94%;
@@ -146,27 +149,15 @@ p {
 .modal hr {
   margin: 10px 0;
 }
-
-/* .modal .test-btn {
+.returnToSignUp {
   position: absolute;
-  top: 3rem;
-  right: 2rem;
+  top: 1rem;
+  left: 2rem;
   font-size: 5rem;
   color: rgb(174, 170, 170);
   cursor: pointer;
   border: none;
   background: none;
-  font-size: 50px;
+  font-size: 20px;
 }
-.modal .test-btn::before {
-  content: "";
-  position: absolute;
-  z-index: 3;
-    top: 1.5rem;
-  right: 1.5rem;
-  background-color: #fff;
-  width: 20px;
-  height: 30px;
-} */
 
-/* .modal .show-modal-SignUp */
