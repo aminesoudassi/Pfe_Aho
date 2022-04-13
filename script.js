@@ -1,41 +1,45 @@
 'use strict';
 
-const modal = document.querySelector('.modal');
+const modal = document.getElementById('test');
 const overlay = document.querySelector('.overlay');
-const btnCloseModal = document.querySelector('.close-modal');
-const btnsOpenModal = document.querySelectorAll('.show-modal');
-const btn_SignUp = document.querySelector('.show-modal-SignUp');
+const btnCloseModalId = document.getElementById('close-modal-id');
+const btnsOpenModalId = document.getElementById('show-modal-id');
 
-const openModal = function () {
+btnsOpenModalId.onclick = function () {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
-};
+}
 
-const closeModal = function () {
+btnCloseModalId.onclick = function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
-};
+}
 
-for (let i = 0; i < btnsOpenModal.length; i++)
-  btnsOpenModal[i].addEventListener('click', openModal);
 
-btnCloseModal.addEventListener('click', closeModal);
-overlay.addEventListener('click', closeModal);
 
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-    closeModal();
-  }
-});
+// ##########################
+// ##########################
+// ##########################
 // openModalSignUp
-// const openModalSignUp = function () {
-//   btn_SignUp.classList.remove('hidden');
-//   btn_SignUp.classList.add('hidden');
+const BtnSignUp = document.getElementById('For-Sign-Up');
+const modalSignUp = document.getElementById('test1');
+const btnOpenModalIdSignUp = document.getElementById('open-modal-id-SignUp');
+const btnCloseModalIdSignUp = document.getElementById('close-modal-id-SignUp');
+const btnReturnToSignUp = document.getElementById('return-SignUp-id');
 
-//   const closeModal = function () {
-//     modal.classList.add('hidden');
-//     overlay.classList.add('hidden');
-//   };
-// }
-// for (let i = 0; i < btnsOpenModal.length; i++)
-// btn_SignUp[i].addEventListener('click', openModalSignUp);
+btnOpenModalIdSignUp.onclick = function () {
+    modalSignUp.classList.remove('hidden');
+}
+
+
+btnCloseModalIdSignUp.onclick = function () {
+  modalSignUp.classList.add('hidden');
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+}
+
+btnReturnToSignUp.onclick = function () {
+  modalSignUp.classList.add('hidden');
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+}
