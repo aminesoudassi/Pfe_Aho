@@ -68,10 +68,10 @@ p {
   top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
-/*   width: 440px;
-  height: 680px; */
-  width: 31%;
-  height: 85%;
+  width: 440px;
+  height: 680px;
+/*   width: 31%;
+  height: 85%; */
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
