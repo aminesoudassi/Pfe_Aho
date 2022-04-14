@@ -138,8 +138,8 @@ p {
 }
 .returnToSignUp {
   position: absolute;
-  top: 1rem;
-  left: 2rem;
+  top: 8px;
+  left: 14px;
   font-size: 5rem;
   color: rgb(174, 170, 170);
   cursor: pointer;
@@ -147,19 +147,7 @@ p {
   background: none;
   font-size: 20px;
 }
-@media screen and (max-width: 450px){
-  .modal {
-    width: 340px;
-    height: 640px; 
-    padding: 50px 30px 10px;
-    margin-top: 20px;
-  }
-  .close-modal {
-    top: 10px;
-    right: 8px;
-  }
 
-}
 
 @media screen and (max-width: 1024px){
   .modal {
@@ -178,6 +166,49 @@ p {
   .modal .para-for-General-Terms {
     font-size: 12px;
     margin-top: 10px;
+  }
+
+}
+@media screen and (max-width: 450px){
+  .modal {
+    width: 340px;
+    height: 640px; 
+    padding: 50px 30px 10px;
+    margin-top: 20px;
+  }
+  .close-modal {
+    top: 10px;
+    right: 8px;
+  }
+
+}
+
+@media screen and (max-width: 324px){
+  .modal {
+    width: 300px;
+    height: 540px; 
+    padding: 50px 30px 10px;
+    margin-top: 10px;
+  }
+  .modal p {
+    font-size: 14px;
+  }
+  .modal h1 {
+    margin: 5px 0;
+  }
+  .close-modal {
+    top: 10px;
+    right: 8px;
+  }
+  .modal hr {
+    margin: 5px 0;
+  }
+  .modal .para-for-sign-in {
+    margin: 5px;
+  }
+  .modal .para-for-General-Terms {
+    font-size: 12px;
+    margin-top: 5px;
   }
 
 }
